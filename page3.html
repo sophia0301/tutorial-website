@@ -15,10 +15,10 @@
         <!--Main Navigation-->
         <nav>
             <ul>
-                <li>Home</li>
-                <li>About</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">About</a></li>
                 <li>Gallery</li>
-                <li>Contact</li>
+                <li><a href="page3.html">Contact</a></li>
             </ul>
         </nav><!--End of Main navigation-->
 
@@ -29,18 +29,28 @@
             <img src="images/central_park.jpg" alt="Central Park" width="500">
             <form action="/signup" method="post">
                 <fieldset>
+                    
                     <legend>User Personal Information</legend>
-                    <label>Enter your Full Name</label>label<br>
+                    <label>Enter your Full Name</label><br>
                     <input type="text" name="name"></br>
                     <label>Enter your Email</label><br>
                     <input type="email" name="email"></br>
                     <label>Enter your Phone</label><br>
                     <input type="text" name="phone"></br>
+                    
                     <br><label>Select your Gender</label><br>
                     <input type="radio" name="gender" value="male"/>Male
                     <input type="radio" name="gender" value="female"/>Female<br/>
+                    
                     <br><label>How should we contact you?</label><br>
-                    <select></select>
+                    <select>
+                        <option>Email</option>
+                        <option>Phone</option>
+                    </select><br>
+                    <br>Tell us the reason of your visit today:<br>
+                    <textarea rows="5" cols="30"></textarea><br>
+                    <input type="submit" value="sign-up">
+
                 </fieldset>
             </form>
                     
